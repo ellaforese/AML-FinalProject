@@ -1,7 +1,7 @@
 import os
 from autogen import AssistantAgent, UserProxyAgent
 
-llm_config = {"model": "gemini-pro", "api_key": os.environ["API-KEY"]}
+llm_config = {"model": "gpt-4", "api_key": "INSERT-API-KEY-HERE"}
 assistant = AssistantAgent("assistant", llm_config=llm_config)
 user_proxy = UserProxyAgent("user_proxy", code_execution_config=False)
 
